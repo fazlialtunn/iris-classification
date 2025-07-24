@@ -56,7 +56,7 @@ preds = model.predict(X_test)
 
 
 ✅ Results
-	•	Accuracy: 100%
+	•	Accuracy: 94%
 	•	Confusion Matrix:
 
 [[11  0  0]
