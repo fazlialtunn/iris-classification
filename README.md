@@ -2,6 +2,8 @@
 
 This project demonstrates a complete machine learning pipeline for classifying iris flowers into three species using the famous Iris dataset. The pipeline includes data preprocessing, visualization, outlier removal, and training an XGBoost classifier.
 
+---
+
 ## 📂 Dataset
 
 The dataset used is a modified version of the classic Iris dataset which includes some missing values (`NaN`). The features are:
@@ -12,39 +14,45 @@ The dataset used is a modified version of the classic Iris dataset which include
 - `PetalWidthCm`
 - `Species` (Target variable)
 
+---
+
 ## 🛠️ Preprocessing Steps
 
-1. **Read CSV File**
-   - Dataset loaded from `datasets/data_with_nans.csv`
+1. **Read CSV File**  
+   Loaded from `datasets/data_with_nans.csv`
 
-2. **Drop Unnecessary Columns**
-   - Dropped `Unnamed: 0` and `Id` columns
+2. **Drop Unnecessary Columns**  
+   Dropped `Unnamed: 0` and `Id`
 
-3. **Handle Missing Values**
-   - Missing values are filled with **class-wise mean imputation**
+3. **Handle Missing Values**  
+   Filled using **class-wise mean imputation**
 
-4. **Outlier Detection and Removal**
-   - **3-Sigma Rule**
-   - **IQR (Interquartile Range) Method**
+4. **Outlier Detection and Removal**  
+   - Using **3-Sigma Rule**
+   - Using **IQR (Interquartile Range) Method**
 
-5. **Label Encoding**
-   - `Species` is encoded into numerical labels using `LabelEncoder`
+5. **Label Encoding**  
+   Encoded `Species` using `LabelEncoder`
 
-6. **Train-Test Split**
-   - 80% training, 20% testing
+6. **Train-Test Split**  
+   80% training, 20% testing
+
+---
 
 ## 📊 Visualization
 
-Scatter plots of each feature colored by species were created:
+Scatter plots were created for each feature colored by species:
 - Before and after removing missing values
 - Before and after outlier removal
 
+---
+
 ## 🤖 Model: XGBoost Classifier
 
-- `objective="multi:softmax"`
-- `num_class=3`
+- Objective: `"multi:softmax"`
+- Classes: `3` (Setosa, Versicolor, Virginica)
 
-### Training and Evaluation
+### 🔧 Training and Evaluation
 
 ```python
 from xgboost import XGBClassifier
@@ -54,7 +62,6 @@ model = XGBClassifier(objective="multi:softmax", num_class=3)
 model.fit(X_train, y_train)
 preds = model.predict(X_test)
 
-
 ✅ Results
 	•	Accuracy: 94%
 	•	Confusion Matrix:
@@ -63,8 +70,13 @@ preds = model.predict(X_test)
  [ 0 10  0]
  [ 0  0 10]]
 
+
+⸻
+
 🧾 Final Output
-	•	Cleaned and preprocessed data is saved as final_data.csv
+	•	Cleaned and preprocessed dataset saved as: final_data.csv
+
+⸻
 
 📁 Repository Structure
 
@@ -74,6 +86,9 @@ preds = model.predict(X_test)
 ├── iris_classification.ipynb
 ├── README.md
 
+
+⸻
+
 📌 Requirements
 	•	Python 3.7+
 	•	pandas
@@ -81,12 +96,3 @@ preds = model.predict(X_test)
 	•	matplotlib
 	•	scikit-learn
 	•	xgboost
-
-Install requirements:
-
-pip install pandas seaborn matplotlib scikit-learn xgboost
-
-📬 Contact
-
-If you have questions or suggestions, feel free to reach out via issues or fork this repo and contribute!
-```
