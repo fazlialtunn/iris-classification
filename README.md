@@ -1,11 +1,6 @@
-Here’s a README.md file you can use for your Iris classification GitHub repo. It documents the dataset, preprocessing steps, model training, and evaluation in a clear, professional way using Markdown format:
-
-⸻
-
-
 # 🌸 Iris Species Classification using XGBoost
 
-This project demonstrates a complete machine learning pipeline for classifying iris flowers into three species using the famous [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris). The pipeline includes data preprocessing, visualization, outlier removal, and training an XGBoost classifier.
+This project demonstrates a complete machine learning pipeline for classifying iris flowers into three species using the famous Iris dataset. The pipeline includes data preprocessing, visualization, outlier removal, and training an XGBoost classifier.
 
 ## 📂 Dataset
 
