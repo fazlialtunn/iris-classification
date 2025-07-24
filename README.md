@@ -90,12 +90,3 @@ pip install pandas seaborn matplotlib scikit-learn xgboost
 
 If you have questions or suggestions, feel free to reach out via issues or fork this repo and contribute!
 ```
-
-⸻
-
-Author: Fazlı Altun
-License: MIT
-
----
-
-Let me know if you'd like me to include a Jupyter badge (e.g., “Open in Colab”), or change the tone (academic, beginner-friendly, etc.).
