@@ -53,7 +53,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 model = XGBClassifier(objective="multi:softmax", num_class=3)
 model.fit(X_train, y_train)
 preds = model.predict(X_test)
-```
+
 
 ✅ Results
 	•	Accuracy: 100%
@@ -89,6 +89,7 @@ pip install pandas seaborn matplotlib scikit-learn xgboost
 📬 Contact
 
 If you have questions or suggestions, feel free to reach out via issues or fork this repo and contribute!
+```
 
 ⸻
 
