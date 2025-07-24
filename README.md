@@ -31,7 +31,7 @@ The dataset used is a modified version of the classic Iris dataset which include
    - `Species` is encoded into numerical labels using `LabelEncoder`
 
 6. **Train-Test Split**
-   - 80% training, 20% testing with `random_state=42`
+   - 80% training, 20% testing
 
 ## 📊 Visualization
 
